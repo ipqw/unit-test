@@ -16,6 +16,9 @@ describe('example store', async function() {
         
         await this.browser.assertView('plain', '.Application', {
             compositeImage: false,
+            ignoreElements: [
+                ".card-body"
+            ]
         });
 
         const title = await this.browser.$('.col h1').getText();

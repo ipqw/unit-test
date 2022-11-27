@@ -5,7 +5,8 @@
         "start": "nodemon ./src/server/index.ts",
         "test": "jest",
         "build": "webpack --mode=production --node-env=production",
-        "watch": "webpack --watch"
+        "watch": "webpack --watch",
+        "hermione": "npx hermione gui ./test/hermione/example.hermione.js"
     },
     "dependencies": {
         "@babel/preset-flow": "^7.18.6",
